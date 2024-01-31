@@ -1,8 +1,8 @@
 <?php
-    const BASE_URL = "http://localhost/CulTech/";
-    //const BASE_URL = "http://192.168.200.222/CulTech/";
+    const BASE_URL = "http://localhost/safefall/";
+    //const BASE_URL = "http://192.168.200.222/safefall/";
     const HOST = "localhost";
-    const BD = "cultech";
+    const BD = "safefall";
     const DB_USER = "root";
     const PASS = "";
     const CHARSET = "charset=utf8";
@@ -13,7 +13,7 @@
     error_reporting(0); 
 
     //PONE EL DOMINIO PARA EL SIDEBAR
-    const DOM = "/CulTech";
+    const DOM = "/safefall";
 
     // Establecer un nuevo límite de tiempo de ejecución a 600 segundos (5 minutos)
     set_time_limit(600);

@@ -17,22 +17,56 @@
         }
 
         //Registra una nuevo placa
-        public function insertarMonitoreo(string $id_cultivo, string $tem, string $humendad, string $stem, string $shumendad, string $lum, string $co2, string $altura)
+        //public function insertarMonitoreo(string $id_cultivo, string $tem, string $humendad, string $stem, string $shumendad, string $lum, string $co2, string $altura)
+        //{
+        //    $return = "";
+        //    $this->id_cultivo = $id_cultivo;
+        //    $this->tem = $tem;
+        //    $this->humendad = $humendad;
+        //    $this->stem = $stem;
+        //    $this->shumendad = $shumendad;
+        //    $this->lum = $lum;
+        //    $this->co2 = $co2;
+        //    $this->altura = $altura;
+        //    $query = "INSERT INTO monitoreo(id_cultivo, tem, humendad, stem, shumendad, lum, co2, altura) VALUES (?,?,?,?,?,?,?,?)";
+        //    $data = array($this->id_cultivo, $this->tem, $this->humendad, $this->stem, $this->shumendad, $this->lum, $this->co2, $this->altura);
+        //    $resul = $this->insert($query, $data);
+        //    return $resul;
+        //}
+
+
+
+
+
+
+        
+        public function insertarMonitoreo(string $id_placa, string $pulso, string $estado)
         {
             $return = "";
-            $this->id_cultivo = $id_cultivo;
-            $this->tem = $tem;
-            $this->humendad = $humendad;
-            $this->stem = $stem;
-            $this->shumendad = $shumendad;
-            $this->lum = $lum;
-            $this->co2 = $co2;
-            $this->altura = $altura;
-            $query = "INSERT INTO monitoreo(id_cultivo, tem, humendad, stem, shumendad, lum, co2, altura) VALUES (?,?,?,?,?,?,?,?)";
-            $data = array($this->id_cultivo, $this->tem, $this->humendad, $this->stem, $this->shumendad, $this->lum, $this->co2, $this->altura);
+            $this->id_placa = $id_placa;
+            $this->pulso = $pulso;
+            $this->estado = $estado;
+            $query = "INSERT INTO monitoreo(id_placa, pulso, estado) VALUES (?,?,?)";
+            $data = array($this->id_placa, $this->pulso, $this->estado);
             $resul = $this->insert($query, $data);
             return $resul;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         //Trae la configuración del cultivo.
         public function CultivoConfiguracion(string $id_cultivo)
