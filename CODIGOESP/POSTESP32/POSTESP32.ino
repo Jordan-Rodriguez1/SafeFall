@@ -2,9 +2,9 @@
 #include <HTTPClient.h>
 
 // Puente acceso Wifi
-const char* WIFI_SSID = "MEGACABLE_2.4G_EBC8";
-const char* WIFI_PASSWORD = "J6T7e2M8J4T5D4Z7a2a2";
-const char* serverURL = "http://192.168.1.5/CulTech/Esp/RegistroDatos";
+const char* WIFI_SSID = "Mega_2.4G_E38C";
+const char* WIFI_PASSWORD = "PD9cX6z7";
+const char* serverURL = "http://192.168.1.9/safefall/Esp/RegistroDatos";
 const char* id_placa = "12345678";
 
 
@@ -28,7 +28,7 @@ void loop() {
     //CONFIGURAMOS PARA HACER POST
     WiFiClient client;
     HTTPClient http;
-    http.begin(client, IngresarDatos);
+    http.begin(client, serverURL);
     http.addHeader("Content-Type", "application/x-www-form-urlencoded");
 
     //GUARDAMOS LOS DATOS EN UNA VARIABLE

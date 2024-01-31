@@ -46,7 +46,7 @@
             $this->id_placa = $id_placa;
             $this->pulso = $pulso;
             $this->estado = $estado;
-            $query = "INSERT INTO monitoreo(id_placa, pulso, estado) VALUES (?,?,?)";
+            $query = "INSERT INTO test(id_placa, pulso, estado) VALUES (?,?,?)";
             $data = array($this->id_placa, $this->pulso, $this->estado);
             $resul = $this->insert($query, $data);
             return $resul;

@@ -1,6 +1,6 @@
 <?php
-    const BASE_URL = "http://localhost/safefall/";
-    //const BASE_URL = "http://192.168.200.222/safefall/";
+    //const BASE_URL = "http://localhost/safefall/";
+    const BASE_URL = "http://192.168.1.9/safefall/";
     const HOST = "localhost";
     const BD = "safefall";
     const DB_USER = "root";
