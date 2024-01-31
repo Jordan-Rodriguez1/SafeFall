@@ -51,6 +51,6 @@ void loop() {
 
     http.end();
 
-    delay(5000); // Espera 30 segundos antes de enviar la siguiente solicitud POST
+    delay(30000); // Espera 30 segundos antes de enviar la siguiente solicitud POST
   }
 }
